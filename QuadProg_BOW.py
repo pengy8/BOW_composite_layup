@@ -84,8 +84,8 @@ def QP_bow(JT,Vd,Lambda,Epsilon1,q,Epsilon2,dq_pre, Closest_Pt_L , Closest_Pt_en
     # joint limits
     dt = 0.1
     n_q = 17
-    upper_joint_limit = (np.array([97.5, 60, 175, 150, 175, 120, 175])-15)*np.pi/180
-    lower_joint_limit = (np.array([-97.5,-123, -175, -2.5, -175, -90, -175])+15)*np.pi/180
+    upper_joint_limit = (np.array([97.5, 60, 175, 150, 175, 120, 175])-25)*np.pi/180
+    lower_joint_limit = (np.array([-97.5,-123, -175, -2.5, -175, -90, -175])+25)*np.pi/180
     upper_limit = np.hstack((upper_joint_limit,upper_joint_limit,np.array([10000,10000,10000])))
     lower_limit = np.hstack((lower_joint_limit,lower_joint_limit,np.array([-10000,-10000,-10000])))
 
@@ -166,7 +166,9 @@ def QP_bow(JT,Vd,Lambda,Epsilon1,q,Epsilon2,dq_pre, Closest_Pt_L , Closest_Pt_en
 ##        vr_scaled = dq_sln[-2]*vr.reshape(3,1)
 #        
 #        #print np.dot(np.linalg.pinv(J_eef),v)
-     
+    if any(np.isnan(dq_sln)):
+        dq_sln = np.zeros([18,])     
+        
     return dq_sln
 
                            
