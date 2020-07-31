@@ -9,7 +9,7 @@ Code for BOW transporting a composite sheet
 BOWwCloth.m 
 ```
 
-2. In a Ubuntu 14.04 + ROS Indigo computer, run the jointcontroller_host and peripherals_host from baxter_rr_bridge (https://github.com/rpiRobotics/baxter_rr_bridge/tree/master/scripts) with port 1111 and 2222
+2. In a Ubuntu 14.04 + ROS Indigo computer, run the jointcontroller_host and peripherals_host from baxter_rr_bridge with port 1111 and 2222
 ```
 rosrun baxter_rr_bridge jointcontroller_host.py --port 1111
 rosrun baxter_rr_bridge peripherals_host.py --port 2222
