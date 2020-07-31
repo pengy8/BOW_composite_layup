@@ -27,7 +27,7 @@ python Main_BOW_Layup.py
 ```
 or
 ```
-python ridgeback_QP_ForceKinect_kinectAzure_RR3_decoupled_20200313
+python ridgeback_QP_ForceKinect_kinectAzure_RR3_decoupled_20200313.py
 ```
 
 ## Prerequisites
