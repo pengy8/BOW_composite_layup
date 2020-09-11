@@ -4,7 +4,7 @@ Code for BOW transporting a composite sheet
 
 ## Getting Started
 
-1. In a Win10 computer, run the Azure Kinect RR Service from Kinect_Azure_RR_Interface
+1. In a Win10 computer, run the Azure Kinect RR Service from Kinect_Azure_RR_Interface; also, run the SpeechRecognition_RR_service.py for the voice command service
 
 
 2. In a Ubuntu 14.04 + ROS Indigo computer, run the jointcontroller_host and peripherals_host from baxter_rr_bridge with port 1111 and 2222
